@@ -1,0 +1,153 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./main-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: -10px;
+}
+
+.header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ham-wrap {
+    display: none;
+}
+
+.social-wrap {
+    display: none;
+}
+
+.nav {
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.body {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.your {
+    font-size: 72pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-bottom: -30px;
+}
+
+.personal {
+    font-size: 24pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.footer {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12pc;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .nav {
+        display: none;
+    }
+
+    .ham-wrap {
+        display: initial;
+        width: 50vw;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .line-circle {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid white 1px;
+        border-radius: 12pc;
+        margin-left: 30px;
+    }
+
+    .line-wrap {
+        width: 40px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .line {
+        background: white;
+        width: 40px;
+        height: 2px;
+        display: block;
+
+    }
+
+    .social-wrap {
+        display: initial;
+        width: 50vw;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .social img {
+        width: 30px;
+        height: auto;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .your {
+        font-size: 58pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        margin-bottom: -30px;
+    }
+
+    .personal {
+        font-size: 18pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+}
